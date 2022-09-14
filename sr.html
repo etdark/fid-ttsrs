@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Speech Recognition</title>
+	<link rel="stylesheet" type="text/css" href="sr.css">
+        <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+	<div class="main">
+		<ul>
+               <li><a href="home.html" class="notactive">Home</a></li>
+               <li><a href="tts.html" class="notactive">Text To Speech</a></li>
+               <li class="active"><a href="sr.html">Speech recognition</a></li>
+               <li><a href="#" class="notactive">About</a></li>
+		</ul>
+	</div>
+        <div class="logo">
+		<img src="images/logosr.png"> 
+         </div>
+
+
+        <div class="recorderesult"> 
+              <div class="recorder">
+                   <center>
+
+                       <img id = "record-btn" src="images/record.png" alt="" onclick="recordstart(event);return false;">
+                       <h5 id = "recordinfo">Tap to start</h5>
+                   </center>
+             </div>
+
+              <div>
+                  <center class="result">
+                        <fieldset id="resultset">
+                                <legend id = "legend">Transcripted</legend>
+                                <textarea id="resultholder"></textarea>
+                        </fieldset>
+
+                  </center>
+                  <div >
+                        <fieldset id="preresult">
+                                <legend id = "prelegend">Estimate value</legend>
+                                <h4 id="preresultext" ></h4>
+                        </fieldset>
+            
+                    </div>
+
+             </div>
+
+   </div>
+<script src="sr.js"></script>
+</body>
+</html>
+

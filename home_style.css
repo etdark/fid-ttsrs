@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+body{
+	background-image: url(images/bg.jpg);
+	height: 100vh;
+	background-size: cover;
+
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+    color: #ED3100;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+    border-radius: 20px;
+}
+
+ul li a.notactive:hover{
+    border-radius: 20px;
+	color: white;
+	background-color: #ED3100;
+}
+
+ul li.active a{
+	color: #000;
+}
+
+.logo img{
+	width: 30%;
+	height: auto;
+}
+.logo{
+ margin-left: 40%;
+
+}
+
+.learmorebtn{
+	padding: 10px;
+	margin: 10px;
+	color: white;
+	background-color: #ED3100;
+	padding: 10px 25px;
+	border-radius: 20px;
+	border: 1px solid transparent;
+	transition: 0.6 ease;
+}

@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+body{
+	
+	height: 0vh;
+	background-image: url(images/bg.jpg);
+	background-size: cover;
+	margin-bottom: 1000px;
+
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+    color: #ED3100;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+    border-radius: 20px;
+}
+
+ul li a.notactive:hover{
+    border-radius: 20px;
+	color: white;
+	background-color: #ED3100;
+}
+
+ul li.active a{
+	color: #000;
+}
+
+.logo img{
+	width: 30%;
+	height: auto;
+}
+.logo{
+ margin-left: 40%;
+
+}
+.recorderesult{
+	margin-top: 3%;
+	background-color: #eef2fb;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-radius: 30px;
+    height: auto;
+	padding-bottom: 50px;
+}
+#record-btn{
+	width: 15%;
+	height: auto;
+}
+#resultholder{
+	border-color: white;
+	height: 200px;
+	width: 99%;
+
+}
+#resultset{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 50px;
+	background-color: white;
+	border-radius: 15px;
+}
+#legend{
+	font-weight: bold;
+	margin-left: 50px;
+	
+}
+#preresult{
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 50px;
+	background-color: white;
+	border-radius: 15px;
+	display: none;
+}

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amharic Text to Speech</title>
+	<link rel="stylesheet" type="text/css" href="tts.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+	<div class="main">
+		<ul>
+				<li><a href="home.html" class="notactive">Home</a></li>
+				<li class="active"><a href="tts.html">Text to Speech</a></li>
+				<li><a href="sr.html" class="notactive">Speech recognition</a></li>
+				<li><a href="#" class="notactive">About</a></li>
+		</ul>
+	</div>
+	
+	<div class="logo">
+		<img src="images/logotts.png" height="250">
+	</div >
+
+	<div class="btn-holder">
+		       <label for="fidele">
+			        <input type="checkbox" id="fidele" name="submit" value="yes"> Write amharic in english 
+		        </label>
+
+		        <center>
+		            <textarea id = "holder" placeholder="  Write your text here"></textarea> 
+			    </center>
+
+				<center class="coffiddle">
+				   <p id="resultoffidel"></p>
+			    </center>
+				<input type="file" id = "file" hidden>
+				<button type="button" class="btn-upload" onclick= "upload()" >
+							<h5 class="fa fa-upload"> upload File </h5> 
+				</button>
+              <div class = "btn-generate">
+				  <img src="images/generate.png" id ="generate" onclick="generate()"></img>
+				  <div class = "audio">
+
+				      <audio  id =  "aud" src="" type="audio/mpeg" controls > </audio>
+				  </div>
+			  </div>  
+	</div>
+	<h1 id = "filelink" hidden>ለሉሊላ</h1>
+	<h1  id="uploaddata" hidden ></h1>
+	<h1 id = "checker" hidden></h1>
+	
+<script src="tts.js"></script>
+</body>
+</html>
+
+
+
