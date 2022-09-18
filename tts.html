@@ -3,48 +3,64 @@
 <html>
 <head>
 	<title>Amharic Text to Speech</title>
+	
 	<link rel="stylesheet" type="text/css" href="tts.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="main">
+		<img id="main_logo" src="images/main_bg.svg" alt="">
 		<ul>
 				<li><a href="home.html" class="notactive">Home</a></li>
 				<li class="active"><a href="tts.html">Text to Speech</a></li>
 				<li><a href="sr.html" class="notactive">Speech recognition</a></li>
 				<li><a href="#" class="notactive">About</a></li>
 		</ul>
-	</div>
+	</div> 
 	
-	<div class="logo">
-		<img src="images/logotts.png" height="250">
-	</div >
 
 	<div class="btn-holder">
-		       <label for="fidele">
-			        <input type="checkbox" id="fidele" name="submit" value="yes"> Write amharic in english 
-		        </label>
+				<center class="coffiddle">
+					<p id="resultoffidel"></p>
+				 </center>
 
 		        <center>
-		            <textarea id = "holder" placeholder="  Write your text here"></textarea> 
+		            <textarea id = "holder" spellcheck = "false" placeholder="  Write your text here"></textarea> 
 			    </center>
+				<div class="full">
+					<div class="row">
+						<div>
+							<div class = "btn-generate"> 
+								  <button id ="generate" onclick="generate()">Generate</button>
+							   </div>  
+						   </div>
+						   <div class = "audio">
+							<audio  id =  "aud" src="" type="audio/mpeg" controls > </audio>
+							 </div>
+						   <div class="upload">
+								<button type="button" id="btn-upload" onclick= "upload()" >
+									<div class="row">
+										<h5 class="fa fa-upload" style="color:#ff5700;">  </h5> 
+										<h5 id="up"  >upload file </h5> 
+									
+									</div>
+									 
+								 </button>
+							</div>
+							<div id="fidelediv">
+								<label for="fidele">
+									   <input type="checkbox" id="fidele" name="submit" value="yes"> Use english letter for writing amharic
+									</label>
+							</div>
+							<input type="file" id = "file" hidden>
+	
+					  </div>
+				</div>
 
-				<center class="coffiddle">
-				   <p id="resultoffidel"></p>
-			    </center>
-				<input type="file" id = "file" hidden>
-				<button type="button" class="btn-upload" onclick= "upload()" >
-							<h5 class="fa fa-upload"> upload File </h5> 
-				</button>
-              <div class = "btn-generate">
-				  <img src="images/generate.png" id ="generate" onclick="generate()"></img>
-				  <div class = "audio">
-
-				      <audio  id =  "aud" src="" type="audio/mpeg" controls > </audio>
-				  </div>
-			  </div>  
 	</div>
 	<h1 id = "filelink" hidden>ለሉሊላ</h1>
 	<h1  id="uploaddata" hidden ></h1>
