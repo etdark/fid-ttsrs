@@ -4,14 +4,6 @@
 	font-family: Century Gothic;
 }
 
-body{
-	height: 0vh;
-	background-image: url(images/bg.jpg);
-	background-size: cover;
-	margin-bottom: 1000px;
-
-
-}
 
 ul{
 	float: right;
@@ -25,7 +17,7 @@ ul li{
 
 ul li a{
 	text-decoration: none;
-    color: #ED3100;
+    color: #103037;
 	padding: 5px 20px;
 	border: 1px solid transparent;
 	transition: 0.6s ease;
@@ -33,28 +25,31 @@ ul li a{
 }
 
 ul li a.notactive:hover{
-    border-radius: 20px;
+    border-radius: 10px;
 	color: white;
-	background-color: #ED3100;
+	background-color : #103037;
 }
 
 ul li.active a{
-	color: #000;
+	color:  #ff5700;
+}
+#main_logo{
+	padding-left: 100px;
+	padding-top: 30px;
 }
 
 .logo img{
-	width: 30%;
+	width: 15%;
 	height: auto;
-}
-.logo{
- margin-left: 40%;
-
+	margin-top: 1%;
 }
 
 #fidele{
-	margin-left: 78%;
 	margin-bottom: auto;
-	margin-top: 5%;
+	margin-top: 2%;
+}
+#fidelediv{
+	padding-left: 10%;
 }
 p {
 	font-size: 15px;
@@ -64,18 +59,26 @@ p {
 	border-width: 5px;
 
 }
-.btn-upload{
+.upload{
+	margin-left: 15%;
+	
+}
+#btn-upload{
 	cursor: pointer;
-	margin-top: 1%;
-	margin-left: 89%;
+	margin-top: 0;
     background-color: transparent ;
 	transition: 0.6s ease;
 	border-width: 0ch;
-	height: auto;
 	font-size: large;
 	font-family: Century Gothic;
 }
-.btn-upload :hover{
+#up{
+	font-family: Century Gothic;
+	padding-left: 10PX;
+	color: #ff5700;
+}
+
+#btn-upload :hover{
 	opacity: 50%;
 }
 
@@ -84,50 +87,56 @@ p {
 	height: auto;
 }
 #generate{
-	width: 15%;
-	height: auto;
+	color: #103037;
+	border-radius: 5px;
+	height: 40px;
+	width: 150px;
+	background-color: white;
+	border-color: #ff5700;
 	cursor: pointer
 }
 #holder{
-	width: 90%;
-	height:200px;
+	margin-top: 5%;
+	width: 70%;
+	max-width: 70%;
+	min-width: 70%;
+	height:300px;
+	min-height:300px ;
+	max-height: 500px;
 	border-radius: 7px;
-	padding: 5px;
-	border: white;
+	padding: 10px;
+	box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1);
 }
-.row{
-	width: 100%;
-	text-align: center;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
 
-}
 .block{
 	width: 100px;
 	display: inline-block;
 	padding: 0px 150px;
 }
-.btn-generate{
-	margin-left: 5%;
-}
 .btn-holder{
-	margin-top: 3%;
-	background-color: #eef2fb;
+
+	background-image: #eef2fb;
 	margin-left: 10%;
 	margin-right: 10%;
 	border-radius: 30px;
     height: auto;
-	padding-bottom: 50px;
 }
 
-.btn-generate .audio audio{
-	border: #ED3100;
-	border-width: 15px;
+#aud{
 	color: aliceblue;
-	display : none;
+	display: none;
 	margin-left: 30%;
+	display: none;
 }
 #filelink{
 	display: none;
+}
+.row{
+	margin-top: 2%;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+}
+.full{
+	margin-left: 14%;
 }
