@@ -3,24 +3,58 @@
 <head>
 	<title>Amharic Text to Speech and Speech Recognition</title>
 	<link rel="stylesheet" type="text/css" href="home_style.css">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-		<div class="main">
-			<ul>
+
+
+		<div class="page-header" >
+           			<div class="title">
+				<img id="main_logo" src="images/main_bg.svg" alt="">
+			</div>
+			<a id="menu-icon" class="menu-icon" onclick="onMenuClick()">
+				<i class="fa fa-bars"></i>
+			</a>
+			
+			<div id="navigation-bar" class="nav-bar text">
 				<li class="active"><a href="home.html">Home</a></li>
 				<li ><a class="notactive" href="tts.html">Text to Speech</a></li>
-				<li><a class="notactive" href="sr.html">Speech recognition</a></li>
+				<li><a class="notactive" href="stt.html">Speeech recognition</a></li>
 				<li><a class="notactive" href="#">About</a></li>
-			</ul>
-        </div>
-        <div class="logo">
-				<img src="images/main_logo.png">
-         </div>
-         <center><h1 class="h1font"> Amharic </h1></center>
-         <center><h2> Text to Speech & Speech Recognition </h2></center>
-         <center><p> Text to Speech help us to convert text into speech & speech recognition</p></center>
-         <center><p> help us to convert speech into text.</p></center>
-        	<div class="learnmore"><center><a href="learnmore.html"><button class="learmorebtn"> Learn More </button></a></center></div>
+			</div>    
+
+	
+		
+	
+	</div>
+	<div class="row">
+		<div class="block">
+		   <div class="main-text">
+				<h1 id="amh-txt" >Welcome to Fid</h1>
+			   <h3 id="ttssr-txt">Text to speech and Speech recognition</h3>
+		   </div>
+
+		   <div class="learn">
+			  <div>
+				  <p>fid amharic text to speech can speech amharic from any text</p>
+				  <p>speech recognition can recognize speech(convert any speech/audio into text) </p>
+			  </div>
+			<div class="learnmore-btn">
+				 <a href=""><button id=learnmore-btn  onclick="learnmore_rd()">Learn More</button> </a>
+			</div>
+		   </div>
+		</div>
+		<div class="block1">
+			<img id = "home_d" src="images/home_d.png" alt="">
+		</div>
+
+	</div>
+
+		
 </body>
+<script src="home.js"></script>
 </html>
 
