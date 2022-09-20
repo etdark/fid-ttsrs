@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+  background-image: url(../images/bg.jpg);
+}
+.block {
+  float: left;
+  margin-left: 15%;
+  margin-top: 5%;
+  width: 30%;
+}
+.block1 {
+  margin-top: 6.5vh;
+  margin-left: 6vh; 
+}
+#btn-upload {
+  background-color: white;
+  border: none; 
+  padding-top: 1.2vh;
+  padding-left: 1vw;
+}
+#btn-upload h5 {
+  width: 100%;
+  font-size: 1.2em;
+  padding-left: 25%;
+  padding-top: 2.5vh;
+}
+.record-div {
+  margin-left: 10%;
+  width: 30%;
+}
+.record-div p {
+  color: #103037;
+  padding-top: 10%;
+  padding-left: 30%;
+  font-weight: bold;
+}
+#record-icon {
+  color: #103037;
+  width: 100%;
+  height: 30%;
+  margin-left: 1.5vw;
+}
+#result-holder {
+  width: 100%;
+  height: 100%;
+  resize: vertical;
+  max-height: 300px;
+  min-height: 250px;
+  margin-left: 1.5vw;
+  margin-top: 1.5vh;
+  border: 1px solid #103037;
+  border-radius: 5px;
+  padding: 1vh;
+  font-size: 1.2em;
+  color: #103037;
+}
+#btn-done{
+  color: #103037;
+  border-radius: 5px;
+  height: 40px;
+  width: 150px;
+  background-color: white;
+  border-color: #ff5700;
+  cursor: pointer;
+  display: none;
+}
+#upload-text{
+  margin-top: 15px;
+  display: none;
+}
+#loading{
+  width: 70px;
+  padding-top: 100px;
+  padding-left: 30px;
+  display: none;
+}
+.done{
+  padding-top: 50px;
+  padding-left: 15px;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#legend{
+	font-weight: bold;
+	margin-left: 50px;
+	
+}
+#preresult{
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 50px;
+	background-color: white;
+	border-radius: 15px;
+	display: none;
+}
+@media screen and (max-width: 680px) {
+	.row{
+		margin-left: 0;
+		margin-top: 0;
+		display: block;
+	}
+	.block{
+		display: block;
+		width:100%;
+		margin-left:0%;
+		margin-top: 0%;
+		margin-bottom: 5%;
+	}
+	.record-div{
+		margin-left:35%;
+		margin-top: 0%;
+	}
+
+	#btn-upload{
+		margin-left: 5%;
+	}
+	#result-holder{
+		width:85%;
+		margin-left:5%;
+		margin-right:5%;
+	}
+	.block1{
+		display: block;
+		margin-left:5%;
+	}
+
+	.checkbox-div{
+		display:block;
+		margin-left:5%;
+		margin-top:5%;
+	}
+}
