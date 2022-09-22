@@ -4,46 +4,19 @@ body{
 	font-family: Century Gothic;
 	background-image: url(../images/bg.jpg);
 }
-#home_d{
+#about-img{
 	width: 850;
 	height: auto;	
 }
 .block{
-	float: left;
+	padding: 50px;
+}
+#about{
+	padding-top: 70px;
 }
 .block1{
     margin-top: 6.5vh;
 	margin-left: 6vh;
-}
-#amh-txt{
-	color: #103037;
-}
-#ttssr-txt{
-	padding-top: 30px;
-	color: #103037;
-}
-.main-text{
-	margin-left: 10%;
-	margin-top:15vh;
-	font-size: larger;
-}
-.learn{
-	margin-left: 10%;
-	padding-top: 30px;
-}
-#learnmore-btn{
-	margin-top: 50px;
-	color: white;
-	cursor: pointer;
-	background-color: #ff5700;
-	border-width: 0;
-	border-radius: 5px;
-	height: 30px;
-	width: 90px;
-	transition: 100ms;
-}
-#learnmore-btn :hover{
-	opacity: 50%;
 }
 .row{
 	width: 100%;
@@ -52,7 +25,7 @@ body{
 }
 
 @media screen and (max-width: 680px) {
-	#home_d {
+	#about-img {
 		display: none;
 	}
 	.main-text{
