@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+        <title>Amharic Text to Speech and Speech Recognition</title>
+        <link rel="stylesheet" type="text/css" href="./navbar/navbar-styles.css">
+        <link rel="stylesheet" type="text/css" href="./speech-reco/speech-reco.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+        <div class="page-header">
+                <div class="title">
+                        <a href="./index.html"> <img src="./images/fid-logo.svg" alt="logo img" /></a>
+                </div>
+                <a id="menu-icon" class="menu-icon" onclick="onMenuClick()">
+                        <i class="fa fa-bars"></i>
+                </a>
+
+                <div id="navigation-bar" class="nav-bar text">
+                        <a href="./index.html"> Home </a>
+                        <a href="./text-to-speech.html"> Text to Speech </a>
+                        <a href="./speech-reco.html" class="active"> Speech Recognition </a>
+                        <a href="./about.html"> About </a>
+                </div>
+        </div>
+
+        <div class="row">
+                <div class="block">
+                        <div class="record-div">
+                                <img id="record-icon"  src="./images/record.png" alt="" onclick="recordstart(event);return false;"
+                                        style="color:#FF5700;">
+                                <p id = "recordinfo">Tap to Start</p>
+
+                                <input type="file" id="upload" hidden>
+                                <img src="./images/loader-orange.gif" alt="" id="loading">
+                                <button type="button" id="btn-upload" onclick="upload()">
+                                        <h5 class="fa fa-upload" style="color:#ff5700;"> upload file</h5>
+                                </button>
+                                <div class="done">
+                                        <button id = "btn-done" onclick="done()">done</button>
+                                </div>
+                        </div>
+                        <h5 id="upload-text">
+                                <div class="row">
+                                         <h3>You uploaded a file press </h3>
+                                         <h3 style="padding-left: 2px; color:#FF5700;">done</h3>
+                                         <h3 style="padding-left: 2px;">to transcript</h3>
+                                </div>
+                                </h5>
+                </div>
+                <div class="block1">
+                        <form>
+                                <textarea id="result-holder" name="speech-text" rows="10" cols="50"
+                                        placeholder="speech text will be here"></textarea>
+                                <div class="cop_dow">
+                                        <img onclick="cc()"id = "copy" src="./images/clipboard.png" alt="" >
+                                        <img id = "down" src="./images/download.png" alt="" >
+                                </div>
+                        </form>
+                                <fieldset id="preresult">
+                                        <legend id = "prelegend">Estimate value</legend>
+                                        <h4 id="preresultext" ></h4>
+                                </fieldset>
+
+                </div>
+
+        </div>
+
+
+</body>
+<script src="./index.js"></script>
+<script src="./sr.js">  </script>
+</html>
