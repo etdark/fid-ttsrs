@@ -52,7 +52,7 @@ function onMenuClick() {
 // detect if the holder is changed and translate result of text if check-value is on
 jQuery('#holder').on('input propertychange paste', function() {
     holder_data = document.getElementById("holder").value    
-    url = "https://fidelapi.herokuapp.com/?text="+ holder_data 
+    url = "https://fidel-api.herokuapp.com/?text="+ holder_data 
     var xmlHttp = new XMLHttpRequest()
     xmlHttp.open( "GET", url )
           xmlHttp.onreadystatechange = function() {
