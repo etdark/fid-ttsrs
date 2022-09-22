@@ -70,6 +70,24 @@ body {
   margin-top: 15px;
   display: none;
 }
+#copy{
+  width: 30px;
+}
+#copy :hover{
+    opacity: 50%;
+    color: blue;
+}
+.cop_dow{
+  padding-left: 92%;
+}
+#down{
+  padding-left: 20px;
+  width: 30px;
+}
+.cop_dow{
+  display:flex;
+  flex-direction: row;
+}
 #loading{
   width: 70px;
   padding-top: 100px;
